@@ -1,4 +1,3 @@
-
 #include <gl/Angel.h>
 
 namespace Angel {

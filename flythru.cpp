@@ -3,7 +3,7 @@
 //
 // Colors are assigned to each vertex and then the rasterizer interpolates
 //   those colors across the triangles.  We us an orthographic projection
-//   as the default projetion.
+//   as the default projetion. 
 
 #include <gl/Angel.h>
 
