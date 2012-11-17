@@ -5,7 +5,6 @@
 //   those colors across the triangles.  We us an orthographic projection
 //   as the default projetion.
 
-//VS grpu
 #include <gl/Angel.h>
 
 
@@ -176,7 +175,7 @@ init()
     glBufferSubData( GL_ARRAY_BUFFER, sizeof(points), sizeof(colors), colors );
 
     // Load shaders and use the resulting shader program
-    GLuint program = InitShader( "D:\\My Documents\\GitHub\\graphicsGP\\vshaderFlythru.glsl", "D:\\My Documents\\GitHub\\graphicsGP\\fshaderFlythru.glsl" );
+    GLuint program = InitShader( "vshaderFlythru.glsl", "fshaderFlythru.glsl" );
     glUseProgram( program );
 
     // set up vertex arrays
