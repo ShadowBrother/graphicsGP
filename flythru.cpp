@@ -5,7 +5,6 @@
 //   those colors across the triangles.  We us an orthographic projection
 //   as the default projetion.
 
-//VS grpu
 #include <gl/Angel.h>
 
 
