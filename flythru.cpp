@@ -5,6 +5,7 @@
 //   those colors across the triangles.  We us an orthographic projection
 //   as the default projetion.
 
+//VS grpu
 #include <gl/Angel.h>
 
 
@@ -175,7 +176,7 @@ init()
     glBufferSubData( GL_ARRAY_BUFFER, sizeof(points), sizeof(colors), colors );
 
     // Load shaders and use the resulting shader program
-    GLuint program = InitShader( "vshaderFlythru.glsl", "fshaderFlythru.glsl" );
+    GLuint program = InitShader( "D:\\My Documents\\GitHub\\graphicsGP\\vshaderFlythru.glsl", "D:\\My Documents\\GitHub\\graphicsGP\\fshaderFlythru.glsl" );
     glUseProgram( program );
 
     // set up vertex arrays
@@ -295,11 +296,11 @@ GLfloat dY = 0.0 ;
 
 void processMousePassiveMotion(int x, int y){
 
-	if(x > windowWidth/2) { Theta[Yaxis] += 0.5  ; dX = -1 ;}
-	else if( x < windowWidth/2 ){ Theta[Yaxis] -= 0.5 ; dY = 1 ;}
+	if(x > windowWidth/2) { Theta[Yaxis] += 0.1  ; dX = -1 ;}
+	else if( x < windowWidth/2 ){ Theta[Yaxis] -= 0.1 ; dY = 1 ;}
 
-	if(y > windowHeight/2 ){ Theta[Xaxis] -= 0.5  ; dY = -1 ;  }
-	else if(y < windowHeight/2 ){ Theta[Xaxis] += 0.5 ; dY = 1 ; }
+	if(y > windowHeight/2 ){ Theta[Xaxis] -= 0.1  ; dY = -1 ;  }
+	else if(y < windowHeight/2 ){ Theta[Xaxis] += 0.1 ; dY = 1 ; }
 	//dX = x ;
 	//dY = y ;
 }
